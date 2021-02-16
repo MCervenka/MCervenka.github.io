@@ -6,14 +6,20 @@
         function myFunction() {
             document.getElementById("demo").innerHTML = "Paragraph changed.";
         }
+        function getLink() {
+            var url = document.getElementById('routeInput').value;
+            document.getElementById("demo").innerHTML = url;
+            window.open(url);
+        }
     </script>
 </head>
 
 <body>
 
-    <h1>A Web Page</h1>
+    <h1>Opens url from input</h1>
     <p id="demo">A Paragraph</p>
-    <button type="button" onclick="myFunction()">Try it</button>
+    <input id='routeInput'  />
+    <button type="button" onclick="getLink()">Try it</button>
 
 </body>
 
